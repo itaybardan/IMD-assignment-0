@@ -1,7 +1,8 @@
 fun main(args: Array<String>) {
-    val c1: Shape = Circle("c1", 3.0)
-    val t1: Shape = Triangle("t1", 5.0, 3.0, 4.0)
-    val s1: Shape = Square("s1", 10.0, 20.0)
+    println("Enter the dimensions to all shapes one by one")
+    val c1: Shape = Circle("c1", readLine()?.toDouble() ?: 0.0)
+    val t1: Shape = Triangle("t1", readLine()?.toDouble() ?: 0.0, readLine()?.toDouble() ?: 0.0, readLine()?.toDouble() ?: 0.0)
+    val s1: Shape = Square("s1", readLine()?.toDouble() ?: 0.0, readLine()?.toDouble() ?: 0.0)
     c1.print()
     t1.print()
     s1.print()
